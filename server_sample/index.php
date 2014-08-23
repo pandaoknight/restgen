@@ -17,7 +17,7 @@ $url_router->SetMapping(
   )
 );
 $url_router->SetDestinationPath(WEB_ROOT . 'api_implement');
-@$url_router->Route($_SERVER['PATH_INFO']);
+@$url_router->Route($_SERVER['REQUEST_URI']);
 
 
 ?>
